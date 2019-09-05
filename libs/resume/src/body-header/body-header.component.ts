@@ -15,8 +15,8 @@ export class BodyHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.totalYears = moment().diff(moment(this.joiningDate).subtract(1, 'months'), 'years');
-    this.totalMonths = (moment().diff(moment(this.joiningDate).subtract(1, 'months'), 'months') % 12);
+    this.totalYears = moment().diff(moment(this.joiningDate).subtract(1, 'months'), 'years')+;
+    // this.totalMonths = (moment().diff(moment(this.joiningDate).subtract(1, 'months'), 'months') % 12);
     console.log(this.totalYears);
     console.log(this.totalMonths);
   }
